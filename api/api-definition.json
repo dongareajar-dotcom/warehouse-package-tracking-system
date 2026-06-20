@@ -1,0 +1,47 @@
+API Definition - Logistics Tracking System
+API Information
+
+API Name: LogisticsTrackingAPI
+
+API Type: HTTP API
+
+Region: ap-south-1
+
+Stage: $default
+
+Authorization: NONE
+
+CORS: Disabled
+
+Base URL
+https://c4jd7eoes1.execute-api.ap-south-1.amazonaws.com
+Register Package Endpoint
+Endpoint
+POST /register-package
+Full URL
+https://c4jd7eoes1.execute-api.ap-south-1.amazonaws.com/register-package
+Description
+
+Registers a package in the logistics tracking system. Package information is stored in Amazon DynamoDB for further processing.
+
+Sample Request
+{
+  "packageId": "PKG1001",
+  "customerName": "Rahul Sharma",
+  "email": "rahul@gmail.com",
+  "status": "Received"
+}
+Sample Success Response
+Status: Succeeded
+Test Event Name: der
+
+Response:
+{
+  "statusCode": 200,
+  "body": "\"Package PKG1001 for Rahul Sharma has arrived at Mumbai\""
+}
+## Test Responce
+{
+  "statusCode": 200,
+  "body": "\"Package PKG1001 for Rahul Sharma has arrived at Mumbai\""
+}
